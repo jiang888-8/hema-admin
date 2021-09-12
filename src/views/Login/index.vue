@@ -6,10 +6,10 @@
           <img src="../../assets/logo.b5a855ee.png" alt="">
         </div>
         <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
-          <el-form-item prop="name">
+          <el-form-item prop="username">
             <el-input prefix-icon='el-icon-user-solid' v-model.trim="ruleForm.username" autocomplete="off"></el-input>
           </el-form-item>
-          <el-form-item prop="pass">
+          <el-form-item prop="password">
             <el-input type="password" prefix-icon='el-icon-lock' v-model.trim="ruleForm.password" autocomplete="off"></el-input>
           </el-form-item>
           <el-form-item class="btns">
@@ -34,7 +34,7 @@ export default {
       rules: {
         username: [
           { required: true, message: '请输入用户名', trigger: 'blur' },
-          { min: 2, max: 6, message: '长度在 3 到 5 个字符', trigger: 'blur' }
+          { min: 2, max: 6, message: '长度在 2 到 6 个字符', trigger: 'blur' }
         ],
         password: [
           { required: true, message: '请输入密码', trigger: 'blur' },

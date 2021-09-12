@@ -57,7 +57,11 @@ export default {
               username: this.ruleForm.username,
               password: this.ruleForm.password
             })
-            console.log(res)
+            console.log(res.meta.status)
+            if (res.meta.status !== 200) {
+              this.$message(res.meta.msg)
+              return
+            }
             this.$store.commit('setUser', res.token)
             this.$router.push('/home')
           } catch (err) {

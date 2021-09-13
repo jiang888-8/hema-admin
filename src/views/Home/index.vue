@@ -95,7 +95,7 @@ export default {
 <style scoped lang='less'>
 #app {
   height: 100%;
-  .el-container {
+  /deep/.el-container {
     height: 100%;
     .el-header {
       display: flex;
@@ -117,8 +117,15 @@ export default {
       .el-aside {
         background: #333744;
 
+        .el-submenu {
+          width: 200px;
+        }
       }
 
+    }
+
+    .el-main {
+      background-color: #eaedf1;
     }
   }
 }

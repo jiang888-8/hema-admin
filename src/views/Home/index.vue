@@ -8,6 +8,7 @@
       <el-container>
         <el-aside width="200px">
           <el-menu
+          router
           default-active="2"
           class="el-menu-vertical-demo"
           @open="handleOpen"
@@ -20,7 +21,7 @@
                 <span>用户管理</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="1-1">用户列表</el-menu-item>
+                <el-menu-item index="/users_list">用户列表</el-menu-item>
               </el-menu-item-group>
 
             </el-submenu>
@@ -29,8 +30,8 @@
                 <span>权限管理</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="2-1">角色列表</el-menu-item>
-                <el-menu-item index="2-1">权限列表</el-menu-item>
+                <el-menu-item index="/roles">角色列表</el-menu-item>
+                <el-menu-item index="/privilege">权限列表</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
             <el-submenu index="3" >
@@ -38,9 +39,9 @@
                 <span>商品管理</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="3-1">商品列表</el-menu-item>
-                <el-menu-item index="3-1">分类参数</el-menu-item>
-                <el-menu-item index="3-1">商品分类</el-menu-item>
+                <el-menu-item index="/goods">商品列表</el-menu-item>
+                <el-menu-item index="/sort">分类参数</el-menu-item>
+                <el-menu-item index="/goods_category">商品分类</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
             <el-submenu index="4">
@@ -48,7 +49,7 @@
                 <span>订单管理</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="4-1">订单列表</el-menu-item>
+                <el-menu-item index="/order">订单列表</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
             <el-submenu index="5">
@@ -56,12 +57,14 @@
                 <span>数据统计</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="5-1">数据报表</el-menu-item>
+                <el-menu-item index="/data">数据报表</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
           </el-menu>
         </el-aside>
-        <el-main>欢迎登录</el-main>
+        <el-main>
+          <router-view />
+        </el-main>
       </el-container>
     </el-container>
   </div>

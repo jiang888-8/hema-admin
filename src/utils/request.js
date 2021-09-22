@@ -10,7 +10,7 @@ request.interceptors.request.use(config => {
   // console.log(config)
   if (store.state.user) {
     // 配置请求头
-    config.headers.Authorization = 'Bearer ' + store.state.user.token
+    config.headers.Authorization = store.state.user
   }
   return config
 })

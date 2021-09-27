@@ -62,7 +62,7 @@ export default {
               this.$message(res.meta.msg)
               return
             }
-            this.$store.commit('setUser', res.token)
+            this.$store.commit('setUser', res.data.token)
             this.$router.push('/home')
           } catch (err) {
             alert('系统异常!')

@@ -7,7 +7,7 @@
   <el-breadcrumb-item>数据报表</el-breadcrumb-item>
 </el-breadcrumb>
 
-   <el-card >
+   <el-card class="card">
       <!-- 2. 为ECharts准备一个具备大小（宽高）的Dom -->
       <div id="main" style="width: 800px;height:500px;"></div>
     </el-card>

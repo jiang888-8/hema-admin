@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import './styles/index.less'
 import './Element'
+import './feng/dataFormat'
 import {
   Pagination,
   Dialog,

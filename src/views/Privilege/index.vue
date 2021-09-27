@@ -50,4 +50,8 @@ export default {
 }
 </script>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+.box-card{
+  margin-top: 20px;
+}
+</style>

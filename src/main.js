@@ -5,6 +5,9 @@ import store from './store'
 import './styles/index.less'
 import './Element'
 import '@/filters'
+import TreeTable from 'vue-table-with-tree-grid'
+
+Vue.component('tree-table', TreeTable)
 
 Vue.config.productionTip = false
 

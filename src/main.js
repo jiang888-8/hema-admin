@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import './styles/index.less'
 import './Element'
+<<<<<<< HEAD
 import './feng/dataFormat'
 import {
   Pagination,
@@ -84,6 +85,12 @@ import {
   Message,
   Notification
 } from 'element-ui'
+=======
+import '@/filters'
+import TreeTable from 'vue-table-with-tree-grid'
+
+Vue.component('tree-table', TreeTable)
+>>>>>>> c268b5864814ba856ae8636dc6f58907d36a244a
 
 Vue.use(Pagination)
 Vue.use(Dialog)

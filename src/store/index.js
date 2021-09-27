@@ -4,16 +4,16 @@ import { getItem, setItem } from '@/utils/storage.js'
 
 Vue.use(Vuex)
 
-const hmttToken = 'HMTT-TOKEN'
+const htglToken = 'HTGL-TOKEN'
 
 export default new Vuex.Store({
   state: {
-    user: getItem(hmttToken)
+    user: getItem(htglToken)
   },
   mutations: {
     setUser (state, payload) {
       state.user = payload
-      setItem(hmttToken, payload)
+      setItem(htglToken, payload)
     }
   },
   actions: {

@@ -69,7 +69,6 @@ export default {
             console.log(err)
           }
         } else {
-          console.log('登录失败')
           return false
         }
       })

@@ -8,8 +8,9 @@
             v-model="queryInfo.query"
             placeholder="请输入内容"
             clearable
+            @clear="onGetUserList"
             >
-              <el-button slot="append" icon="el-icon-search" @click="onGetUserList" @clear="onGetUserList"></el-button>
+              <el-button slot="append" icon="el-icon-search" @click="onGetUserList" ></el-button>
             </el-input>
           </div>
         </el-col>

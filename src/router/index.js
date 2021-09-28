@@ -11,6 +11,7 @@ import Sort from '@/views/Sort'
 import GoodsCategory from '@/views/GoodsCategory'
 import Order from '@/views/Order'
 import Data from '@/views/Data'
+import GoodsAdd from '@/views/GoodsAdd'
 
 Vue.use(VueRouter)
 
@@ -69,6 +70,11 @@ const routes = [
         // 数据报表
         path: '/data',
         component: Data
+      },
+      // 添加商品
+      {
+        path: '/goods/add',
+        component: GoodsAdd
       }
     ]
   },

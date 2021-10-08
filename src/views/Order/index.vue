@@ -36,10 +36,10 @@
 <el-table-column label="操作" width="150px">
             <template v-slot="">
               <el-tooltip class="item" effect="dark" content="修改地址" placement="top">
-                <el-button type="primary" icon="el-icon-edit" circle @click="showBox"></el-button>
+                <el-button type="primary" icon="el-icon-edit" circle ></el-button>
               </el-tooltip>
               <el-tooltip class="item" effect="dark" content="物流状态" placement="top">
-                <el-button type="success" icon="el-icon-location" circle @click="showProgressBox"></el-button>
+                <el-button type="success" icon="el-icon-location" circle ></el-button>
               </el-tooltip>
             </template>
           </el-table-column>

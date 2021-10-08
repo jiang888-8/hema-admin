@@ -52,7 +52,7 @@
           size="mini"
           icon="el-icon-edit"
           type="primary"
-          @click="handleEdit(scope.row.cat_id)">编辑</el-button>
+        >编辑</el-button>
           <el-button
           size="mini"
           type="danger"

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-dialog title="添加角色" :visible.sync="addDialogVisible" @close="onClosed">
+    <el-dialog title="添加角色" :visible="addDialogVisible" @close="onClosed">
       <el-form :model="addRolesForm" :rules="addFormRules" ref="addRolesForm" label-width="100px">
         <el-form-item label="角色名称" prop="roleName">
           <el-input v-model="addRolesForm.roleName"></el-input>
